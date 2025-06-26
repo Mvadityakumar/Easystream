@@ -1,0 +1,49 @@
+#mainbackgroundsignin{
+    background-image: url('../assets/background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    }
+    
+#shadesignin{
+    background-color: rgba(0, 0, 0, 0.714);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+#signinform{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 400px;
+    height: 540px;
+    padding-top: 17px;
+    padding-left:30px ;
+    padding-right:30px ;
+
+  
+
+}
+
+#signbtn{
+    background: radial-gradient(#4a7ac6, #3a1ab9);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;    
+    cursor: pointer;
+}
+
+#logoinsigninpage{
+    margin-top: -10px;
+    position:absolute;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+}

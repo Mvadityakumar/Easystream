@@ -1,0 +1,3 @@
+.offcanvas .btn-close {
+    filter: invert(1); /* Turns black to white */
+  }
