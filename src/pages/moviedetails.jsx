@@ -9,7 +9,7 @@ import { motion } from "framer-motion"; // ✅ import motion
 
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-import Footer from "../components/footer";
+
 
 
 

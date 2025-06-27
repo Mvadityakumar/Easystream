@@ -1,4 +1,4 @@
-import Footer from "../components/footer"
+import Footer from '../components/Footer'
 import Navbar from "../components/navbar"
 import '../styles/profile.css';
 import * as Yup from 'yup';

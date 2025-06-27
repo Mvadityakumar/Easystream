@@ -19,7 +19,7 @@ const Navbar = () => {
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:3000/getmovies").then((res) => {
+    axios.get("https://easystreamserver.onrender.com/getmovies").then((res) => {
       setMovies(res.data);
     });
   }, []);

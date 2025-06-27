@@ -5,7 +5,7 @@ import Navbar from '../components/navbar';
 import { useNavigate } from 'react-router-dom';
 
 import { motion } from 'framer-motion' // ✅ import motion
-import Footer from '../components/footer';
+import Footer from '../components/Footer'
 
 
 const WatchList = () => {

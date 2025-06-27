@@ -5,7 +5,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import Curoselslider from '../components/curoselslider'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 
 

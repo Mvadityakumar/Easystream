@@ -8,7 +8,7 @@ import { useCookies } from 'react-cookie'
 
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 const Movies = () => {
 
