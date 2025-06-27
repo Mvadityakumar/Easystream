@@ -52,7 +52,7 @@ const Profile = () => {
 
 
     useEffect(()=>{
-       axios.get("http://127.0.0.1:3000/getusers")
+       axios.get("https://easystreamserver.onrender.com/getusers")
     .then(res => {
       const currentUser = res.data.find(u => u.username === cookies.user);
       setusers(currentUser);
@@ -65,7 +65,7 @@ const Profile = () => {
     },[])
 
     const savee=(value)=>{
-        axios.put(`http://127.0.0.1:3000/updateuser/${cookies.email}/${cookies.user}`,value).then(()=>{
+        axios.put(`https://easystreamserver.onrender.com/updateuser/${cookies.email}/${cookies.user}`,value).then(()=>{
           
        
           

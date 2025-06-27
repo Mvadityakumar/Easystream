@@ -47,7 +47,7 @@ const [snackbarSeverity, setSnackbarSeverity] = useState('success'); // success 
 
   const gettingMovieDetails = useCallback(async () => {
     try {
-      const response = await axios.get(`http://127.0.0.1:3000/getmovie/${id}`);
+      const response = await axios.get(`https://easystreamserver.onrender.com/getmovie/${id}`);
       setMovie(response.data);
     } catch (error) {
       console.error("Error fetching movie details:", error);
@@ -76,7 +76,7 @@ const [snackbarSeverity, setSnackbarSeverity] = useState('success'); // success 
     const watchlist = {...movie,email: cookies.email};
     // console.log(watchlist);
     
-    axios.post("http://127.0.0.1:3000/addwatchlist",watchlist).then(()=>{
+    axios.post("https://easystreamserver.onrender.com/addwatchlist",watchlist).then(()=>{
 
       setSnackbarMsg(`${movie.title} added to watchlist`);
       setSnackbarSeverity("success");

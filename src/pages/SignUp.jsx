@@ -15,7 +15,7 @@ const SignUp = () => {
 
 
     const gettingusers=(e)=>{
-        axios.get("http://localhost:3000/getusers").then((res)=>{
+        axios.get("https://easystreamserver.onrender.com/getusers").then((res)=>{
             // console.log(res.data)
             const users = res.data.find((user)=>user.email === e.target.value)
             if(users){
@@ -34,7 +34,7 @@ const SignUp = () => {
 
    const adduser= (userdetails)=>{
     console.log(userdetails)
-    axios.post("http://localhost:3000/adduser",userdetails).then(()=>{
+    axios.post("https://easystreamserver.onrender.com/adduser",userdetails).then(()=>{
         console.log("User Added")
         alert("Registration Successful")
         document.getElementsByName('username')[0].value = ""

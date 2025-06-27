@@ -35,7 +35,7 @@ const Movies = () => {
         "director": ""
     }])
     useEffect(()=>{
-        axios.get("http://127.0.0.1:3000/getmovies").then((res)=>{
+        axios.get("https://easystreamserver.onrender.com/getmovies").then((res)=>{
           const sortedMovies = res.data.sort((a, b) => {
             return new Date(b.releaseDate) - new Date(a.releaseDate);
           });
@@ -57,7 +57,7 @@ const Movies = () => {
       // alert(cookies.email )
     
       
-      axios.post("http://127.0.0.1:3000/addwatchlist",watchlist).then(()=>{
+      axios.post("https://easystreamserver.onrender.com/addwatchlist",watchlist).then(()=>{
 
         setSnackbarMsg(`${movie.title} added to watchlist`);
         setSnackbarSeverity("success");

@@ -25,7 +25,7 @@ const Signin = () => {
 
 
     const submittinguserdetails = async (values) => {
-        const response =   await axios.get('http://127.0.0.1:3000/getusers')
+        const response =   await axios.get('https://easystreamserver.onrender.com/getusers')
         // console.log(response.data);
         // console.log(values.email);
         // console.log(values.password);

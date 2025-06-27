@@ -33,7 +33,7 @@ const Homepage = () => {
 }])
 
   const gettingmovies = useCallback(async()=>{
-    const response = await axios.get("http://127.0.0.1:3000/getmovies")
+    const response = await axios.get("https://easystreamserver.onrender.com/getmovies")
     setMovies(response.data)
     console.log(response.data[0].title)
     

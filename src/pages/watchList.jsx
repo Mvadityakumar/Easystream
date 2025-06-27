@@ -34,7 +34,7 @@ const WatchList = () => {
 
     const moviesfetching=()=>{
  
-      axios.get(`http://127.0.0.1:3000/getwatchlistmovies/${cookies.email}`).then((moviedetails)=>{
+      axios.get(`https://easystreamserver.onrender.com/getwatchlistmovies/${cookies.email}`).then((moviedetails)=>{
         setMovies(moviedetails.data)
     })
    
@@ -51,7 +51,7 @@ const WatchList = () => {
     } 
 
     const removeMovieFromWatchList=(e,movies)=>{
-      axios.delete(`http://127.0.0.1:3000/deletewatchlist/${movies.id}/${cookies.email}`).then(()=>{
+      axios.delete(`https://easystreamserver.onrender.com/deletewatchlist/${movies.id}/${cookies.email}`).then(()=>{
   console.log("deleted");
   moviesfetching()
   
